@@ -1,0 +1,63 @@
+{
+  "interpretation": "Descriptive data-quality review only; flags are not verified ground-truth errors and are not removed from classification.",
+  "preprocessing": "Standardized numeric fields plus one-hot Section",
+  "contamination": 0.08,
+  "lof_neighbors": 20,
+  "isolation_forest_flags": 32,
+  "lof_flags": 32,
+  "consensus_flags": 17,
+  "pca_explained_variance_ratio": [
+    0.2877846357958186,
+    0.204640075978146
+  ],
+  "sensitivity": [
+    {
+      "parameter": "contamination",
+      "value": 0.05,
+      "consensus_count": 7,
+      "jaccard_to_baseline": 0.4117647058823529
+    },
+    {
+      "parameter": "contamination",
+      "value": 0.08,
+      "consensus_count": 17,
+      "jaccard_to_baseline": 1.0
+    },
+    {
+      "parameter": "contamination",
+      "value": 0.1,
+      "consensus_count": 22,
+      "jaccard_to_baseline": 0.7727272727272727
+    },
+    {
+      "parameter": "lof_neighbors",
+      "value": 10,
+      "consensus_count": 15,
+      "jaccard_to_baseline": 0.6
+    },
+    {
+      "parameter": "lof_neighbors",
+      "value": 20,
+      "consensus_count": 17,
+      "jaccard_to_baseline": 1.0
+    },
+    {
+      "parameter": "lof_neighbors",
+      "value": 30,
+      "consensus_count": 16,
+      "jaccard_to_baseline": 0.7368421052631579
+    },
+    {
+      "parameter": "lof_neighbors",
+      "value": 40,
+      "consensus_count": 14,
+      "jaccard_to_baseline": 0.7222222222222222
+    },
+    {
+      "parameter": "lof_neighbors",
+      "value": 50,
+      "consensus_count": 14,
+      "jaccard_to_baseline": 0.7222222222222222
+    }
+  ]
+}

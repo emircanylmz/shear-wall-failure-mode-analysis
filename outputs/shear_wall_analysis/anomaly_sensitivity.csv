@@ -1,0 +1,9 @@
+parameter,value,consensus_count,jaccard_to_baseline
+contamination,0.05,7,0.4117647058823529
+contamination,0.08,17,1.0
+contamination,0.1,22,0.7727272727272727
+lof_neighbors,10.0,15,0.6
+lof_neighbors,20.0,17,1.0
+lof_neighbors,30.0,16,0.7368421052631579
+lof_neighbors,40.0,14,0.7222222222222222
+lof_neighbors,50.0,14,0.7222222222222222

@@ -1,0 +1,37 @@
+# Local environments and secrets
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage.xml
+.coverage
+htmlcov/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+
+# Generated or unsafe binary artifacts
+*.joblib
+*.pth
+*.pkl
+*.pickle
+*.inspect.ndjson
+outputs/workbook_previews/
+outputs/????????-????-????-????-????????????/
+legacy_outputs/
+
+# Logs and temporary files
+*.log
+*.tmp
+~$*

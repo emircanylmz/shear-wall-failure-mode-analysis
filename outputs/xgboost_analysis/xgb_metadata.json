@@ -1,0 +1,200 @@
+{
+  "data_file": "Shear_Wall_Database_clean.xlsx",
+  "data_sha256": "d649a458b6b23f1ef825586a67dec127a22978415b0e9de0c2c47605f478d41e",
+  "evaluation": "Author and repeated-feature-vector grouped cross-validation",
+  "split_seed_selected_from_label_balance_only": 44,
+  "n_splits": 5,
+  "n_groups": 75,
+  "features": [
+    "M/Vlw",
+    "lw/tw",
+    "ρvwFy,vw/fc",
+    "ρhwFy,vw/fc",
+    "ρvcFy,vc/fc",
+    "ρhcFy,hc/fc",
+    "P/fcAg",
+    "Ab/Ag",
+    "Section"
+  ],
+  "classes": {
+    "1": "Flexural",
+    "2": "Shear",
+    "3": "Flex-Shear",
+    "4": "Sliding"
+  },
+  "class_imbalance": "Fold-local balanced sample weights; no synthetic categorical interpolation",
+  "saved_pipeline_prediction_codes": {
+    "0": "Flexural / FailureMode 1",
+    "1": "Shear / FailureMode 2",
+    "2": "Flex-Shear / FailureMode 3",
+    "3": "Sliding / FailureMode 4"
+  },
+  "fold_metrics": [
+    {
+      "fold": 1,
+      "train_rows": 328,
+      "test_rows": 65,
+      "train_groups": 64,
+      "test_groups": 11,
+      "test_class_counts": [
+        31,
+        18,
+        13,
+        3
+      ],
+      "accuracy": 0.6153846153846154,
+      "balanced_accuracy": 0.5061000827129859,
+      "precision_macro": 0.7157738095238095,
+      "recall_macro": 0.5061000827129859,
+      "f1_macro": 0.5559054957599479,
+      "roc_auc_ovr_macro": 0.838617306821009
+    },
+    {
+      "fold": 2,
+      "train_rows": 315,
+      "test_rows": 78,
+      "train_groups": 60,
+      "test_groups": 15,
+      "test_class_counts": [
+        30,
+        32,
+        14,
+        2
+      ],
+      "accuracy": 0.44871794871794873,
+      "balanced_accuracy": 0.36473214285714284,
+      "precision_macro": 0.3659855769230769,
+      "recall_macro": 0.36473214285714284,
+      "f1_macro": 0.3375366568914956,
+      "roc_auc_ovr_macro": 0.6877997757073844
+    },
+    {
+      "fold": 3,
+      "train_rows": 358,
+      "test_rows": 35,
+      "train_groups": 62,
+      "test_groups": 13,
+      "test_class_counts": [
+        16,
+        10,
+        7,
+        2
+      ],
+      "accuracy": 0.5428571428571428,
+      "balanced_accuracy": 0.3357142857142857,
+      "precision_macro": 0.43956043956043955,
+      "recall_macro": 0.3357142857142857,
+      "f1_macro": 0.3095238095238095,
+      "roc_auc_ovr_macro": 0.7099592284282135
+    },
+    {
+      "fold": 4,
+      "train_rows": 255,
+      "test_rows": 138,
+      "train_groups": 56,
+      "test_groups": 19,
+      "test_class_counts": [
+        45,
+        18,
+        68,
+        7
+      ],
+      "accuracy": 0.30434782608695654,
+      "balanced_accuracy": 0.41311858076563956,
+      "precision_macro": 0.34949688208616775,
+      "recall_macro": 0.41311858076563956,
+      "f1_macro": 0.29199419983002073,
+      "roc_auc_ovr_macro": 0.6655457038009601
+    },
+    {
+      "fold": 5,
+      "train_rows": 316,
+      "test_rows": 77,
+      "train_groups": 58,
+      "test_groups": 17,
+      "test_class_counts": [
+        30,
+        18,
+        20,
+        9
+      ],
+      "accuracy": 0.5194805194805194,
+      "balanced_accuracy": 0.5041666666666667,
+      "precision_macro": 0.5215617715617715,
+      "recall_macro": 0.5041666666666667,
+      "f1_macro": 0.4854832737692778,
+      "roc_auc_ovr_macro": 0.7999683092690325
+    }
+  ],
+  "overall_oof_metrics": {
+    "accuracy": 0.44783715012722647,
+    "balanced_accuracy": 0.41825767309399653,
+    "precision_macro": 0.3825413765491348,
+    "recall_macro": 0.41825767309399653,
+    "f1_macro": 0.37802633303957056,
+    "roc_auc_ovr_macro": 0.7144897958507544
+  },
+  "group_bootstrap_95_intervals": {
+    "accuracy": {
+      "lower_95": 0.28099178695868593,
+      "upper_95": 0.6374622200851765
+    },
+    "balanced_accuracy": {
+      "lower_95": 0.308882708713856,
+      "upper_95": 0.5656757479577722
+    },
+    "f1_macro": {
+      "lower_95": 0.26053238631371084,
+      "upper_95": 0.5653709998245771
+    }
+  },
+  "classification_report": {
+    "Flexural": {
+      "precision": 0.6708860759493671,
+      "recall": 0.6973684210526315,
+      "f1-score": 0.6838709677419355,
+      "support": 152.0
+    },
+    "Shear": {
+      "precision": 0.34545454545454546,
+      "recall": 0.3958333333333333,
+      "f1-score": 0.36893203883495146,
+      "support": 96.0
+    },
+    "Flex-Shear": {
+      "precision": 0.3709677419354839,
+      "recall": 0.1885245901639344,
+      "f1-score": 0.25,
+      "support": 122.0
+    },
+    "Sliding": {
+      "precision": 0.14285714285714285,
+      "recall": 0.391304347826087,
+      "f1-score": 0.20930232558139536,
+      "support": 23.0
+    },
+    "accuracy": 0.44783715012722647,
+    "macro avg": {
+      "precision": 0.3825413765491348,
+      "recall": 0.41825767309399653,
+      "f1-score": 0.37802633303957056,
+      "support": 393.0
+    },
+    "weighted avg": {
+      "precision": 0.46738447508850756,
+      "recall": 0.44783715012722647,
+      "f1-score": 0.44447790410509325,
+      "support": 393.0
+    }
+  },
+  "versions": {
+    "python": "3.12.4",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scikit_learn": "1.4.2",
+    "imbalanced_learn": "0.12.3",
+    "torch": "2.2.2",
+    "matplotlib": "3.8.4",
+    "xgboost": "3.0.1"
+  }
+}

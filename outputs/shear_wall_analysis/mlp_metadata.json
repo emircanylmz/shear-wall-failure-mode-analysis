@@ -1,0 +1,99 @@
+{
+  "evaluation": "Disjoint author/feature-group train-validation-test split",
+  "test_split_seed_selected_from_label_balance_only": 1090,
+  "validation_split_seed_selected_from_label_balance_only": 2054,
+  "train_rows": 271,
+  "validation_rows": 45,
+  "test_rows": 77,
+  "train_groups": 42,
+  "validation_groups": 13,
+  "test_groups": 20,
+  "train_class_counts": [
+    108,
+    61,
+    89,
+    13
+  ],
+  "validation_class_counts": [
+    21,
+    9,
+    12,
+    3
+  ],
+  "test_class_counts": [
+    23,
+    26,
+    21,
+    7
+  ],
+  "input_size": 11,
+  "hidden_size": 64,
+  "dropout": 0.25,
+  "best_epoch": 3,
+  "best_validation_f1_macro": 0.4111786558595069,
+  "independent_test_metrics": {
+    "accuracy": 0.33766233766233766,
+    "balanced_accuracy": 0.36084567606306733,
+    "precision_macro": 0.36075191570881227,
+    "recall_macro": 0.36084567606306733,
+    "f1_macro": 0.3576863561969945,
+    "roc_auc_ovr_macro": 0.6411706172621409
+  },
+  "independent_test_classification_report": {
+    "Flexural": {
+      "precision": 0.625,
+      "recall": 0.6521739130434783,
+      "f1-score": 0.6382978723404256,
+      "support": 23.0
+    },
+    "Shear": {
+      "precision": 0.1111111111111111,
+      "recall": 0.07692307692307693,
+      "f1-score": 0.09090909090909091,
+      "support": 26.0
+    },
+    "Flex-Shear": {
+      "precision": 0.20689655172413793,
+      "recall": 0.2857142857142857,
+      "f1-score": 0.24,
+      "support": 21.0
+    },
+    "Sliding": {
+      "precision": 0.5,
+      "recall": 0.42857142857142855,
+      "f1-score": 0.46153846153846156,
+      "support": 7.0
+    },
+    "accuracy": 0.33766233766233766,
+    "macro avg": {
+      "precision": 0.36075191570881227,
+      "recall": 0.36084567606306733,
+      "f1-score": 0.3576863561969945,
+      "support": 77.0
+    },
+    "weighted avg": {
+      "precision": 0.3260872269492959,
+      "recall": 0.33766233766233766,
+      "f1-score": 0.3287695669900699,
+      "support": 77.0
+    }
+  },
+  "features": [
+    "M/Vlw",
+    "lw/tw",
+    "ρvwFy,vw/fc",
+    "ρhwFy,vw/fc",
+    "ρvcFy,vc/fc",
+    "ρhcFy,hc/fc",
+    "P/fcAg",
+    "Ab/Ag",
+    "Section"
+  ],
+  "classes": {
+    "1": "Flexural",
+    "2": "Shear",
+    "3": "Flex-Shear",
+    "4": "Sliding"
+  },
+  "checkpoint_loading": "Use torch.load(..., weights_only=True)"
+}
